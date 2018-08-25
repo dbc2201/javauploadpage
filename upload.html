@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__getbootstrap_com">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Upload Java File</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./css/floating-labels.css" rel="stylesheet">
+
+        <!-- Alert Dismiss JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body data-gr-c-s-loaded="true" style="">
+        <form class="form-signin">
+            <div class="text-center mb-4">
+                <img class="mb-4" src="./Floating labels example for Bootstrap_files/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal">Java File Upload Page</h1>
+            </div>
+
+            <div class="form-label-group">
+                <input type="text" id="ntxt" name="ntxt" class="form-control" placeholder="Name" required="" size="50">
+                <label for="ntxt">Name</label>
+            </div>
+
+            <div class="form-label-group">
+                <input type="email" id="etxt" name="etxt" class="form-control" placeholder="EMail" required="" size="50">
+                <label for="etxt">EMail</label>
+            </div>
+
+            <div class="form-label-group">
+                <input type="tel" id="rtxt" name="rtxt" class="form-control" placeholder="Roll Number" required="">
+                <label for="rtxt">Roll Number</label>
+            </div>
+
+            <div class="form-label-group">
+                <input type="tel" id="ctxt" name="ctxt" class="form-control" placeholder="Java Class Name" required="">
+                <label for="ctxt">Java Class Name</label>
+            </div>
+
+            <div class="form-label-group">
+                <input type="file" id="file" name="file" size="37" required="">
+            </div>
+
+            <div class="form-label-group">
+                <select class="form-control">
+                    <option>select trainer name</option>
+                    <option>Mr. Neeraj</option>
+                    <option>Mr. Vaibhav Diwan</option>
+                </select>
+            </div>
+
+            <div>
+                <button class="btn btn-lg btn-success btn-block" id="upload" type="submit" value="upload" name="submit">Upload</button>
+
+                <button class="btn btn-lg btn-danger btn-block" id="reset" type="reset" value="reset" name="reset">Reset</button>
+            </div>
+
+            <br>
+
+            <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>
+                    You have successfully uploaded the java file.
+                </p>
+                <hr>
+                <p class="mb-0">
+                    Be sure to keep practising!
+                </p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        </form>
+
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#upload").click(function(){
+                $("#alert").show()
+            })
+        });
+    </script>
+</html>
