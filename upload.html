@@ -22,9 +22,37 @@
     </head>
 
     <body data-gr-c-s-loaded="true" style="">
-        <form class="form-signin">
+        <form class="form-signin" action="" method="post">
+
+            <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert">
+                <h4 class="alert-heading">Well done!</h4>
+                <p>
+                    You have successfully uploaded the java file.
+                </p>
+                <hr>
+                <p class="mb-0">
+                    Be sure to keep practising!
+                </p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" id="alert">
+                <h4 class="alert-heading">Error!</h4>
+                <p>
+                    There was some error in uploading the file.
+                </p>
+                <hr>
+                <p class="mb-0">
+                    Error Code : 12
+                </p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
             <div class="text-center mb-4">
-                <img class="mb-4" src="./Floating labels example for Bootstrap_files/bootstrap-solid.svg" alt="" width="72" height="72">
                 <h1 class="h3 mb-3 font-weight-normal">Java File Upload Page</h1>
             </div>
 
@@ -68,20 +96,7 @@
 
             <br>
 
-            <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert">
-                <h4 class="alert-heading">Well done!</h4>
-                <p>
-                    You have successfully uploaded the java file.
-                </p>
-                <hr>
-                <p class="mb-0">
-                    Be sure to keep practising!
-                </p>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
+            <!--<p class="mt-5 mb-3 text-muted text-center">2018 &copy; Vaibhav Diwan @ GLA University, Mathura</p>-->
         </form>
 
     </body>
